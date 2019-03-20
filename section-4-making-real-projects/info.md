@@ -16,7 +16,7 @@ docker run -p <port from local>:<destination port> <image name>
 port from local : port accessed by user
 destination port : port in container
 
-# Specifying a workind directory
+# 44. Specifying a working directory
 
 ```sh
 WORKDIR <path> 

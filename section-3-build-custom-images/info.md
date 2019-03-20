@@ -66,3 +66,58 @@ Removing intermediate container a349ad80c5f0
  ---> 17c4e4edd810
 Successfully built 17c4e4edd810
 ```
+
+## 33. Rebuilds with cache
+
+Everytime build, it will check cache first. If exists, it will use cache. Order of instatllation will affect in building image. Must be same as original, can't reverse
+
+## 34. Tagging an image
+
+Tag image so when you want to run docker, you can use tag
+
+
+```sh
+docker run tag
+```
+
+To tag an image:
+```sh
+docker build <tag> .
+```
+
+. : specifies the directory of files/foldes to use fo the build
+
+tag convention : <dockerID>.<repo/projectname>:<latest>
+
+example : stephengrider/redis:latest
+
+run : docker run stephengrider/redis
+
+## 35. Manual image generation with docker commit
+
+1. Run in terminal to create empty container
+
+```sh
+docker run -it alpine sh
+```
+
+2. In bash, install redis
+
+
+```sh
+apk add--update redis
+```
+
+3. In second terminal, get list of container
+
+```sh
+docker ps
+```
+
+4. Apply command
+
+```sh
+docker commit -c 'CMD["redis-server"]' <docker_id>
+```
+
+5. Run server

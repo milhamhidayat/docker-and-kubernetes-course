@@ -138,11 +138,19 @@ docker exec -it sdlfjl redis-cli
 ## 23. The purpose of the IT flag
 
 -it = -i -t
+
 -i : attach to stdin
+
 -t : format the output
 
 ## 24. Get command prompt in a container
 
 ```sh
 docker exec -it <container id> sh
+```
+
+## 25. Starting with a shell
+
+```sh
+docker run -it <image name> sh
 ```

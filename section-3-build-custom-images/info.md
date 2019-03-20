@@ -27,3 +27,9 @@ FROM : docker image that we want to use a base
 RUN : execute command while prepare some image
 
 CMD : to run container
+
+## 30. Base Image
+
+Writing a dockerfile == given a computer with no os to install chrome
+
+like a "os"

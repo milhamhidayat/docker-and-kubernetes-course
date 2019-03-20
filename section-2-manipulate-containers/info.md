@@ -115,3 +115,28 @@ Kill a container:
 docker kill <container id>
 ```
 Will automatically kill the container
+
+## 21. Multi command containers
+
+## 22. Execute commands in running containers
+
+Run :
+```sh
+docker exec -it <container id> <command>
+```
+
+exec : run another command
+-it : allow us to provide input to the container
+<container id> : id of container
+<command> : command to execute
+
+Ex:
+```sh
+docker exec -it sdlfjl redis-cli
+```
+
+## 23. The purpose of the IT flag
+
+-it = -i -t
+-i : attach to stdin
+-t : format the output

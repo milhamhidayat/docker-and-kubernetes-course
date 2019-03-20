@@ -154,3 +154,7 @@ docker exec -it <container id> sh
 ```sh
 docker run -it <image name> sh
 ```
+
+## 26. Container isolation
+
+2 container will not interfere each other even though image is same. For example, create file in one container can't be accessed from another container.

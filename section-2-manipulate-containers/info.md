@@ -140,3 +140,9 @@ docker exec -it sdlfjl redis-cli
 -it = -i -t
 -i : attach to stdin
 -t : format the output
+
+## 24. Get command prompt in a container
+
+```sh
+docker exec -it <container id> sh
+```

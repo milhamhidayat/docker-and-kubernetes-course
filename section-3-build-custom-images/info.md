@@ -12,3 +12,18 @@ Dockerfile step:
 1. Specify a base image
 2. Run some commands to install additional programs
 3. Specify a command to run on container startup
+
+## 28. Build dockerfile
+
+## 29. Dockerfile teardown
+
+FROM, RUN, CMD = instruction telling docker server what to do
+
+
+alpine, dll = argument to the instruction
+
+FROM : docker image that we want to use a base
+
+RUN : execute command while prepare some image
+
+CMD : to run container

@@ -26,8 +26,14 @@ Run docker compose in background:
 docker-compose up -d
 ```
 
-Stop containers
+Stop containers:
 
 ```sh
 docker-compose down
+```
+
+Run docker compose and rebuild:
+
+```sh
+docker-compose up --build
 ```

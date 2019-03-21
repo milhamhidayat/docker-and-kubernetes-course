@@ -64,3 +64,18 @@ COPY . .
 
 CMD ["npm","run","start"]
 ```
+
+## 74. Executing test
+
+To run test :
+
+```sh
+docker build -f Dockerfile.dev .
+docker run <container id> npm run test
+```
+
+To run test with the output:
+
+```sh
+docker run <container id> npm run test
+```

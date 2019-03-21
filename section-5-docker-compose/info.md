@@ -17,3 +17,5 @@ Don't need to setup port
 2. always : if this container stops for any reason, always attempt to restart it 
 3. on-failure : only restart if the container stops with an error code (exit code other than 0)
 3. unless-stopped : always restart unless the developers forcibly stop it
+
+Service : suatu aplikasi yang berjalan

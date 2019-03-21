@@ -104,3 +104,20 @@ Use docker attach, to attach terminal local to the container. But can't enter in
 ```sh
 docker exec -it <container id> sh
 ```
+
+## 80. Implementing multi step builds
+
+```sh
+FROM nginx
+COPY --from=builder /app/build /usr/share/nginx/html
+```
+
+/app/build : place where static react files created
+
+## 81. Running nginx
+
+1. Build image
+
+```sh
+docker build .
+```

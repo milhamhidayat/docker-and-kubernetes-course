@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn React JS, ssr, webpack, parcel js
           </a>
         </header>
       </div>

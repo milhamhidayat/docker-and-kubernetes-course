@@ -48,3 +48,19 @@ It will not work, because container map to node_modules folder in local. But nod
 
 build: 
       context: letak dimana file yang akan dicopy ke container
+
+## 73. Do we need COPY
+
+```sh
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+RUN npm install
+
+// you can delete copy command because we already reference the folder from local to container
+COPY . .
+
+CMD ["npm","run","start"]
+```

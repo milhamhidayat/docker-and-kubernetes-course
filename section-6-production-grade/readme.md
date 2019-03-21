@@ -43,3 +43,8 @@ docker run -p 3000:3000 -v $(pwd):/app <image_id>
 ```
 
 It will not work, because container map to node_modules folder in local. But node_modules folder in local is not exist, that's why it wasn't working. It will overwritten node_modules folder in container will node_modules in local
+
+## 72. Overriding dockerfile selection
+
+build: 
+      context: letak dimana file yang akan dicopy ke container

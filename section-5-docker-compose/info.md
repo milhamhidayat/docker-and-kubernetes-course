@@ -5,3 +5,8 @@
 2. Can be used to start multiple docker containers at the same time
 
 Put it in yml file
+
+# 53. Networking with Docker Compose
+Docker compose : automatically create containers on same network, and have free access to communicate each other.
+
+Don't need to setup port

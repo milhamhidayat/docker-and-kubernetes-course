@@ -93,3 +93,14 @@ docker exec -it <container id> npm run test
 ## 76. Docker compose for running test
 
 Can' enter input to run some jest command in terminal
+
+## 77. Shortcomings on test
+
+
+1st option
+
+Use docker attach, to attach terminal local to the container. But can't enter input to run some jest command in terminal
+
+```sh
+docker exec -it <container id> sh
+```

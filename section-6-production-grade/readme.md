@@ -89,3 +89,7 @@ docker-compose up
 docker ps
 docker exec -it <container id> npm run test
 ```
+
+## 76. Docker compose for running test
+
+Can' enter input to run some jest command in terminal

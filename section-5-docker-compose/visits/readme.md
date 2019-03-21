@@ -13,3 +13,21 @@ docker run milhamhidayat/visits:latest
 ```
 
 Run docker redis
+
+Use docker compose:
+
+```sh
+docker-compose up
+```
+
+Run docker compose in background:
+
+```sh
+docker-compose up -d
+```
+
+Stop containers
+
+```sh
+docker-compose down
+```

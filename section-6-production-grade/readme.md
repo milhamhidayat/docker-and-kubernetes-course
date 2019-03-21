@@ -79,3 +79,13 @@ To run test with the output:
 ```sh
 docker run <container id> npm run test
 ```
+
+## 75. Live updating tests
+
+2nd option
+
+```sh
+docker-compose up
+docker ps
+docker exec -it <container id> npm run test
+```

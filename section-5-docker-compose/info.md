@@ -10,3 +10,10 @@ Put it in yml file
 Docker compose : automatically create containers on same network, and have free access to communicate each other.
 
 Don't need to setup port
+
+## 57. Automatic Container Restarts
+
+1. "no" : never attempt to restart this. container if it stops or crashes
+2. always : if this container stops for any reason, always attempt to restart it 
+3. on-failure : only restart if the container stops with an error code (exit code other than 0)
+3. unless-stopped : always restart unless the developers forcibly stop it

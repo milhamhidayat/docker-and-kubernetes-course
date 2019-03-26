@@ -63,7 +63,7 @@ docker ps --all
 
 ## 16. Container lifecycle
 
-docker run = docket **create** + docker **start**
+docker run = docker **create** + docker **start**
 
 Create a container:
 ```sh
